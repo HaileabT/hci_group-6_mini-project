@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\onehalfspacing{}
+
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \includegraphics[width=100px]{../shared/images/aastu_logo.png} \\
+  {\large\bfseries Addis Ababa Science and Technology University} \\
+  {\large\bfseries College of Engineering} \\
+  {\large\bf Department of Software Engineering} \\[5mm]
+  {\Large\bf Human Computer Interaction - Course Mini-Project} \\[5mm]
+  {\Huge\bfseries Designing An Usable Mobile Banking Application for The Elderly and Novice Users in Ethiopia} \\ [2cm]
+  {\Large\bfseries Section B Group 6 } \\[2mm]
+  {\Large\bfseries\underbar{Members}} \\ [5mm]
+  \begin{tabular}{ll}
+    \large\textbf{Name}     & \large\textbf{ID} \\
+    \large Haileab Tesfaye  & \large ETS0714/14 \\
+    \large Haileyesus Asrat & \large ETS0718/14 \\
+    \large Ephrem Mandefro  & \large ETS0536/14 \\
+    \large Firaol Nigussie  & \large ETS0665/14 \\
+    \large Daniel Yilma     & \large ETS0441/14 \\
+    \large Daniel Ababu     & \large ETS0444/14 \\
+    \large Eyobel Mebratie  & \large ETS0579/14 \\
+    \large Eyoel Tedla      & \large ETS0598/14 \\
+  \end{tabular} \\[4cm]
+
+  \begin{flushright}
+    {\large Submitted To: Instructor Felix E.}\\
+    {\large Submission Date: Apr 11, 2025}
+  \end{flushright}
+
+\end{titlepage}
+\tableofcontents
+\chapter*{Chapter One: Problem Definition}
+\addcontentsline{toc}{chapter}{Problem Definition}
+\setcounter{chapter}{1}
+\setcounter{page}{1}
+\section{Problem Statement}
+Mobile banking has become a vital part of daily life in Ethiopia, particularly in regions where physical banking infrastructure is limited. The rapid growth of mobile banking services, such as CBE Birr, Telebirr, Bank of Abyssinia Mobile Banking, and Amole Lite, offers significant opportunities for financial inclusion. However, these services face substantial usability challenges, especially for novice users and elderly users, two critical but often overlooked user groups.
+
+For novice users, who may have limited experience with smartphones or banking technology, the complexity of existing mobile banking applications presents a significant barrier. These users often struggle to navigate through complex interfaces, understand technical jargon, and perform basic banking tasks like transferring money or checking balances. Many of these apps require a certain level of digital literacy that novice users may lack, leading to frustration and abandonment. The lack of standardized usability guidelines for mobile applications exacerbates these challenges, as designers do not have a clear framework to ensure their apps are accessible and intuitive for all users.
+
+Similarly, elderly users face distinct challenges when interacting with mobile banking apps. The cognitive and physical limitations that often accompany aging, such as reduced vision, impaired motor skills, and slower reaction times, are not adequately addressed by most mobile banking interfaces. Elderly users find it difficult to interact with small text, unclear icons, and poorly organized menus, leading to errors and confusion. Furthermore, mobile banking apps are often designed with younger, more tech-savvy users in mind, neglecting the specific needs of the elderly. As the elderly population in Ethiopia grows, the need for more inclusive, accessible mobile banking solutions becomes increasingly urgent.
+
+The comparative analysis of mobile banking applications in Ethiopia—focusing on CBE Birr, Telebirr, Bank of Abyssinia Mobile Banking, and Amole Lite—reveals significant gaps in addressing the needs of novice and elderly users. While these apps provide basic financial services, their interfaces are not tailored for these user groups. For example, Telebirr and CBE Birr struggle with complex navigation, unclear instructions, and small text sizes, making them difficult for both novice and elderly users to navigate. These shortcomings are further compounded by the lack of guidance, minimal training support, and overwhelming feature sets, all of which hinder the adoption of mobile banking by these vulnerable groups.
+
+The issue is further highlighted by the Systematic Literature Review (SLR), which shows that many mobile banking applications in emerging economies—including Ethiopia—fail to meet usability criteria. Research has identified that novice users often face challenges with navigating hierarchical structures, understanding banking terminology, and completing simple tasks like making payments or transfers. Elderly users, on the other hand, experience difficulties related to poor legibility, small interactive elements, and overly complex navigation. These usability gaps are not only technical but also cultural, as many apps do not account for the local languages or literacy levels of users in Ethiopia.
+
+Despite the growing need for accessible solutions, there are no standardized usability guidelines for mobile banking applications that specifically address the needs of novice and elderly users. Unlike the WCAG 2.0 guidelines for web applications, mobile app development lacks a clear, unified standard for ensuring accessibility and usability. This lack of guidelines leaves developers to rely on inconsistent, fragmented practices, which results in diverse and suboptimal user experiences.
+
+In conclusion, the lack of attention to the needs of novice and elderly users in mobile banking apps in Ethiopia creates a barrier to financial inclusion. There is a clear need for mobile banking applications that are tailored to these user groups, providing simplified navigation, clear icons and text, larger interactive elements, and culturally relevant features. Without these improvements, the potential of mobile banking to drive economic inclusion will be limited, particularly for the most vulnerable populations. Addressing these usability challenges will not only enhance the user experience but also promote broader adoption of mobile banking services across Ethiopia.
+
+\chapter*{Chapter Two: User Personas}
+\addcontentsline{toc}{chapter}{User Personas}
+\setcounter{chapter}{2}
+\setcounter{section}{0}
+\section{User Persona 1: Mulu, Elderly User}
+
+Mulu is a 65-year-old woman living in a rural area in Ethiopia. She has limited experience with mobile phones and only uses her smartphone for basic communication with her family. Recently, she was encouraged by her daughter to start using \textbf{CBE Birr} for making small transactions like buying airtime or sending money to relatives. Mulu has poor vision, and her motor skills are not as sharp as they once were, which makes using apps with small text or intricate navigation challenging for her.
+
+\textbf{Pain Points:}
+\begin{itemize}
+  \item Difficulty reading small text and identifying icons or buttons.
+  \item Struggles with complex menu structures and navigating through multiple screens.
+  \item Gets easily confused by instructions in English or technical terms.
+  \item Finds the login process tedious and frustrating with multiple steps or a complicated password system.
+  \item Often makes mistakes when trying to make a transfer or pay bills, leading to errors or abandoned transactions.
+\end{itemize}
+
+\textbf{Needs:}
+\begin{itemize}
+  \item Larger text, buttons, and icons for better visibility and ease of interaction.
+  \item A simplified and intuitive layout with fewer steps for completing tasks like transferring money or paying bills.
+  \item A single-password login after initial setup, making it easier to access the app.
+  \item Help features that provide audio and text instructions, ideally in Amharic, to explain different functions.
+  \item An option to store and automatically access frequent recipients for faster transactions.
+\end{itemize}
+
+
+\section{User Persona 2: Tsegaye, Novice User}
+
+Tsegaye is a 29-year-old man living in Addis Ababa, Ethiopia. He has a basic understanding of mobile phones but has never used mobile banking before. He recently opened an account with \textbf{Telebirr} to make mobile payments and transfers, but he's unsure how to use the app effectively. Tsegaye has limited digital literacy and is not very familiar with financial terminology. He relies on his friends and family to guide him whenever he needs to make a transaction, and he gets frustrated when he can't figure out the process himself.
+
+\textbf{Pain Points:}
+\begin{itemize}
+  \item Struggles to understand banking terminology and the steps involved in transactions.
+  \item Finds the app's interface complex and hard to navigate, with multiple layers of menus and submenus.
+  \item Frequently makes errors during transactions due to unclear instructions or overwhelming options.
+  \item Has difficulty locating basic features like balance check or money transfer.
+  \item Becomes frustrated when there is no clear guidance or help within the app.
+\end{itemize}
+
+\textbf{Needs:}
+\begin{itemize}
+  \item A simplified interface with fewer layers and more intuitive navigation.
+  \item Clear, simple instructions for every step of the transaction process.
+  \item Local language support, preferably in Amharic, to understand all instructions and features.
+  \item Easy access to the most commonly used features (balance check, money transfer) from the home screen.
+  \item A user-friendly onboarding process with clear tutorials or guides for first-time users.
+\end{itemize}
+\end{document}
